@@ -1,2 +1,2 @@
 # RpcDemo
-Demo service for LGE
+Demo service for OEM
