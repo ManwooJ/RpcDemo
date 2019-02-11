@@ -1,0 +1,12 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    uuid(BB6571B9-D19A-4456-B0DF-4D323BAC9294),
+    version(1.0)
+]
+interface IRpcDemo
+{
+    void RPC_HelloProc([in] unsigned long handle, [in, string] wchar_t * pszString, [out] long * longOut);
+    [callback] void CallbackProc_1([in] unsigned long handle, [in, string] wchar_t * pszStr);
+}
